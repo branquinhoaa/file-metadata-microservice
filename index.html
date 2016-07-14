@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>File Uploader</title>
+    <link href='https://fonts.googleapis.com/css?family=Raleway' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+     <style>
+        body {
+            text-align: center;
+            padding: 10px;
+            color:white;
+            background-color:#4E0214;
+        }
+        form{
+            display:flex;
+            justify-content:center;
+            align-items:center;
+            text-align:justify;
+            padding: 100px;
+        }
+        input button{
+            background-color:red;
+            margin:20px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Submit a file and receive the file size in bytes.</h1>
+    <form id='uploadFile' enctype="multipart/form-data" action="/file" method="post">
+        <input type="file" name="userFile">
+        <input type="submit" class="btn btn-default" value="Upload Image" name="submit" >
+    </form>
+    <script src="https://code.jquery.com/jquery-2.2.0.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+</body>
+
+</html>
